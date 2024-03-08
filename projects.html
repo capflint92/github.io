@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MR Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles-bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="30px" alt="Logo"></a>
+        <!-- Navigation text -->
+        <h5 class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#026804;">MR</h5>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navigation links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                <li class="nav-item" id="animate">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" id="animate">
+                    <a class="nav-link" href="about-me.html">About me</a>
+                </li>
+                <li class="nav-item" id="animate">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item" id="animate">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+            </ul>
+            <!-- Contact link -->
+            <a href="contact.html" class="btn btn-outline-success" role="button">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container px-5 my-5">
+    <div class="row" style="margin-top: 10%">
+
+        <!-- First Project Card -->
+        <div class="col-sm-4 mb-5">
+            <div class="card zoom-container" style="width: 18rem;">
+                <img src="assets/images/first-site.png" class="card-img-top" width="400px" alt="First Project Image">
+                <div class="card-body">
+                    <h5 class="card-title">First project</h5>
+                    <p class="card-text text-primary">Site for the Start2impact introductory course.<br> Feedback: 200/200. First time coding, two weeks before building this portfolio site.</p>
+                    <!-- Repository link -->
+                    <a href="https://github.com/capflint92/Introduction-to-html-css/tree/ef411d850f53e14d541add2fd52cf51d381b85e4" class="btn btn-outline-success">Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Project Card -->
+        <div class="col-sm-4 mb-5">
+            <div class="card zoom-container" style="width: 18rem;">
+                <img src="assets/images/other.png" class="card-img-top" width="400px" alt="Second Project Image">
+                <div class="card-body">
+                    <h5 class="card-title">Work in progress</h5>
+                    <p class="card-text text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ab consequatur voluptates, itaque vero cupiditate nihil sunt recusandae quod dicta iure veniam alias enim error consectetur hic ad ex! Quidem.</p>
+                    <!-- Repository link -->
+                    <a href="#" class="btn btn-outline-success">Repo</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Third Project Card -->
+        <div class="col-sm-4 mb-5">
+            <div class="card zoom-container" style="width: 18rem;">
+                <img src="assets/images/other.png" class="card-img-top" width="400px" alt="Third Project Image">
+                <div class="card-body">
+                    <h5 class="card-title">Work in progress</h5>
+                    <p class="card-text text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aliquid debitis non neque veniam rem commodi suscipit porro veritatis. Expedita tempora optio quaerat laboriosam itaque sit eligendi fugit mollitia esse!</p>
+                    <!-- Repository link -->
+                    <a href="#" class="btn btn-outline-success">Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bag-2">
+    <div class="col-md-3 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <img src="https://www.start2impact.it/wp-content/uploads/2022/08/Logo_University-10.png" width="150px" alt="Start2Impact Logo" style="margin-left: 20px;">
+        </a>
+    </div>
+    <!-- Social media links -->
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="margin-right: 2%;">
+        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/marco-rosato/">
+            <i class="fa-brands fa-linkedin"></i> 
+        </a></li>
+        <li class="ms-3"><a class="text-muted" href="https://github.com/capflint92">              
+            <i class="fa-brands fa-github"></i> 
+        </a></li>
+        <li class="ms-3 mr-3"><a class="text-muted" href="www.instagram.com/marco.orsato">
+            <i class="fa-brands fa-instagram"></i> 
+        </a></li>
+    </ul>
+</footer>
+
+<!-- Bootstrap JS scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!-- Font Awesome script -->
+<script src="https://kit.fontawesome.com/39f7d92bd7.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

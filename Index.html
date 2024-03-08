@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MR Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles-bootstrap.css">
+    <link rel="stylesheet" href="assets/css/styles-index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Open Graph Tags -->
+    <meta property="og:url" content="https://example.com">  
+    <meta property="og:title" content="MR Portfolio">
+    <meta property="og:description" content="Aspiring Front-end developer with a passion for history. Check out my portfolio to see my projects!">
+    <meta property="og:image" content="https://example.com/assets/images/profilo1.png">  
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/img5.jpeg" width="70px" alt="Logo"></a>
+        <!-- Navigation text -->
+        <h5 class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#026804;">MR</h5>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navigation links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-me.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+            </ul>
+            <!-- Contact link -->
+            <a href="contact.html" class="btn btn-outline-success" type="submit">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main class="wrapper">
+    <!-- Featured section -->
+    <section class="featured-box" id="home">
+        <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Marco Rosato</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="text-gradient">
+                <p>I'm Marco and I'm an aspiring front-end developer.
+                  I have two degrees: one in visual arts and one in art history. Now I'm studying web development with Start2impact. <br><em>Part of my life is on this site: take a peek!</em></p>
+            </div>
+        </div>
+        <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/img5.jpeg" width="550px" alt="avatar">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="section" id="about">
+        <div class="row">
+            <div class="text-gradient text-center">
+                <h1>About Me</h1>
+            </div>
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am well-versed in HTML and CSS, and I am currently studying other cutting-edge frameworks and libraries, which enables me to implement interactive features. Additionally, I have experience working with content management systems (CMS) such as WordPress.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="text-primary">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Study in progress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bag-2">
+    <div class="col-md-3 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <img src="https://www.start2impact.it/wp-content/uploads/2022/08/Logo_University-10.png" width="150px" alt="Start2Impact Logo" style="margin-left: 20px;">
+        </a>
+    </div>
+    <!-- Social media links -->
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="margin-right: 2%;">
+        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/marco-rosato/">
+            <i class="fa-brands fa-linkedin"></i> 
+        </a></li>
+        <li class="ms-3"><a class="text-muted" href="https://github.com/capflint92">              
+            <i class="fa-brands fa-github"></i> 
+        </a></li>
+        <li class="ms-3 mr-3"><a class="text-muted" href="www.instagram.com/marco.orsato">
+            <i class="fa-brands fa-instagram"></i> 
+        </a></li>
+    </ul>
+</footer>
+
+<!-- Bootstrap and Font Awesome scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/39f7d92bd7.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
