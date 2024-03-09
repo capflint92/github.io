@@ -1,4 +1,4 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box;margin: 0;}
 /* main bg */
 .bag {
     background: linear-gradient(0.30turn, #21252A 40%, green);
@@ -10,6 +10,7 @@
     color: #fff;
     padding: 12px 0;
 }
+
 
 .btn {
     color: #026804 !important;
@@ -180,6 +181,7 @@ i {
     .bag {
         background: #21252A;
     }
+    footer{width: 100%;}
 
    
 
@@ -245,7 +247,7 @@ html {
 /* ------- BASE -------- */
 body {
     background: var(--body-color);
-    overflow-x: hidden;
+    
 }
 
 .container {
@@ -256,7 +258,7 @@ body {
 }
 
 /* ----- WRAPPER DESIGN ----- */
-.wrapper {
+.wrapper {width: 100%;
     padding-inline: 10vw;
 }
 
