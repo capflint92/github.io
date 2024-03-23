@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MR Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles_portfolio.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Open Graph Tags -->
+    <meta property="og:url" content="https://capflint92.github.io/github.io/index.html">  
+    <meta property="og:title" content="MR Portfolio">
+    <meta property="og:description" content="Aspiring Front-end developer with a passion for history. Check out my portfolio to see my projects!">
+    <meta property="og:image" content="https://capflint92.github.io/github.io/assets/images/img5.jpeg">  
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- NAVBAR -->
+  <header class="header">
+    <div class="header__content">
+      <a class="header__logo" href="index.html"><img class="logo" src="assets/images/img1.png" alt="logo MR"></a>
+      <ul class="header__menu">
+        <li><a href="index.html#about">About me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#" onclick="openContactForm()">Contact</a></li>
+      </ul>
+      <div class="header__quick">
+        <div class="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTACT FORM OVERLAY -->
+<div class="contact-form-overlay" id="contactFormOverlay">
+  <div class="contact-form">
+    <span class="close" onclick="closeContactForm()">&times;</span>
+    <h3 class="text-gradient text-center">Contact Us</h3>
+    <form id="contact-form" onsubmit="event.preventDefault(); sendEmail();">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="How can I help You?" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<!-- Main content -->
+<div class="wrapper">
+    <h2 class="text-gradient text-center mt3">Project</h2>
+    <div class="grid">
+        
+    <!-- FIRST CARD PROJECT -->
+        <div class="col-33">
+            <div class="card">
+                <div class="card-image"><a href="https://capflint92.github.io/DnA-Science/"><img class="card-image" src="assets/images/first-site.png" alt="site of scientist"></a></div>
+                <div class="category"> Website </div>
+                <div class="heading"> DnA Science: blog of two scientist
+                    <div class="author">First site i've created during first lesson of HTML & CSS</div>
+                    <div class="author"> By Marco Rosato </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- SECOND CARD PROJECT -->
+        <div class="col-33">
+            <div class="card">
+                <div class="card-image"><img class="card-image" src="assets/images/wip.jpg" style="padding-bottom: 48px;" alt="work in progress"></div>
+                <div class="category"> Work in progress </div>
+                <div class="heading"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    <div class="author">Stay tuned</div>
+                    <div class="author"> By Marco Rosato </div>
+                </div>
+        </div>  
+        </div>
+
+            <!-- THIRD CARD PROJECT -->
+        <div class="col-33">
+            <div class="card">
+                <div class="card-image"><img class="card-image" src="assets/images/wip.jpg" style="padding-bottom: 48px;" alt="work in progress"></div>
+                <div class="category"> Work in progress </div>
+                    <div class="heading"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        <div class="author">Stay tuned</div>
+                        <div class="author"> By Marco Rosato </div>
+                    </div>
+            </div>  
+        </div>  
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bag-2 footer">
+  <div class="">
+      <a href="https://www.start2impact.it/" class="text-muted">
+          <img src="https://www.start2impact.it/wp-content/uploads/2022/08/Logo_University-10.png" alt="Start2Impact Logo" class="logo_impact">
+      </a>
+  </div>
+  <!-- Social media links -->
+  <ul>
+      <li><a href="https://www.linkedin.com/in/marco-rosato/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/capflint92" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/marco.orsato/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+  </ul>
+</footer>
+
+<!-- SCRIPT AND LINK JS -->
+<script src="https://kit.fontawesome.com/39f7d92bd7.js" crossorigin="anonymous"></script>
+<script src="assets/js/portfolio.js"></script>
+</body>
+</html>

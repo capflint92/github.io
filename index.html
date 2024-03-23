@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MR Portfolio</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/styles-bootstrap.css">
-    <link rel="stylesheet" href="assets/css/styles-index.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
     <!-- Open Graph Tags -->
     <meta property="og:url" content="https://capflint92.github.io/github.io/index.html">  
     <meta property="og:title" content="MR Portfolio">
@@ -21,68 +21,78 @@
 </head>
 
 <body>
-<!-- Bootstrap Navbar -->
-<nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
-    <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/img5.jpeg" width="70px" alt="Logo"></a>
-        <!-- Navigation text -->
-        <h5 class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#026804;">MR</h5>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Navigation links -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="resume.html">Resume</a>
-                </li>
-            </ul>
-            <!-- Contact link -->
-            <a href="contact.html" class="btn btn-outline-success" type="submit">Contact</a>
+    <!-- NAVBAR -->
+    <header class="header">
+      <div class="header__content">
+        <a class="header__logo" href="index.html"><img class="logo" src="assets/images/img1.png" alt=""></a>
+        <ul class="header__menu">
+          <li><a href="#about">About me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="#" onclick="openContactForm()">Contact</a></li>
+        </ul>
+        <div class="header__quick">
+            <!-- NAV-HAMBURGER - CLASS OPEN IN JS -->
+          <div class="nav-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+      </div>
+    </header>
+
+    <!-- CONTACT FORM OVERLAY -->
+<div class="contact-form-overlay" id="contactFormOverlay">
+    <div class="contact-form">
+      <span class="close" onclick="closeContactForm()">&times;</span>
+      <h3 class="text-gradient text-center">Contact Us</h3>
+      <form id="contact-form" onsubmit="event.preventDefault(); sendEmail();">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="How can I help You?" required></textarea>
+        <button type="submit">Send</button>
+      </form>
     </div>
-</nav>
+  </div>
 
-<main class="wrapper">
-    <!-- Featured section -->
-    <section class="featured-box" id="home">
-        <div class="featured-text">
-            <div class="featured-text-card">
-                <span>Marco Rosato</span>
-            </div>
-            <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
-            </div>
-            <div class="text-gradient">
-                <p>I'm Marco and I'm an aspiring front-end developer.
-                  I have two degrees: one in visual arts and one in art history. Now I'm studying web development with Start2impact. <br><em>Part of my life is on this site: take a peek!</em></p>
-            </div>
-        </div>
-        <div class="featured-image">
-            <div class="image">
-                <img src="assets/images/img5.jpeg" width="550px" alt="avatar">
-            </div>
-        </div>
-    </section>
-</main>
-    <!-- Skills section -->
-<div class="wrapper">
-    <section class="section featured-box" id="about">
+  <!-- MAIN SECTION -->
+    <main class="wrapper">
+      <!-- Featured section -->
+      <section class="featured-box" id="home">
+          <div class="featured-text">
+              <div class="featured-text-card">
+                  <span>Marco Rosato</span>
+              </div>
+              <div class="featured-name">
+                  <p>I'm <span class="typedText"></span></p>
+              </div>
+              <div class="text-gradient">
+                  <p>I'm Marco and I'm an aspiring front-end developer.
+                    I have two degrees: one in visual arts and one in art history. Now I'm studying web development with Start2impact. <br><em>Part of my life is on this site: take a peek!</em></p>
+              </div>
+          </div>
+          <div class="featured-image">
+              <div class="image">
+                  <img src="assets/images/img1.png" width="550px" alt="avatar">
+              </div>
+          </div>
+      </section>
+  </main>
+
+<!-- ABOUT-ME -->
+
+<div class="text-gradient text-center">
+  <h1 class="about-title" id="about">About Me</h1>
+</div>
+  <div class="wrapper">
+    <section class="section featured-box">
         <div class="row">
-            <div class="text-gradient text-center">
-                <h1 id="about">About Me</h1>
-            </div>
+            
             <div class="col">
                 <div class="about-info">
                     <h3>My introduction</h3>
@@ -104,48 +114,98 @@
         </div>
     </section>
     <div class="scroll-btn text-secondary">
-            <i class="fa-solid fa-computer-mouse" style="color:#414141"></i>
-            <p style="margin-bottom: 0;">Scroll Down</p>
+            <i class="fa-solid fa-computer-mouse" class="text-secondary"></i>
+            <p class="mb0">Scroll Down</p>
     </div>
 </div>
-<div class="bag">
-    <div class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-4 d-flex justify-content-center">
-                <img src="assets/images/profilo1.png" width="350px" alt="foto profilo">
-            </div>
-            <div class="col-md-7 text-white">
-                <h2 class="text-center">Front-end student</h2>
-                <h3 class="text-center text-white">& History teacher</h3>
-                <p class="text-center">Two things that seem so distant: history and technology. Past and future. They have lived in me since childhood. In high school I studied the basics of computer science, while at university I followed the path of history. Now, I question what I have become, a history teacher, to delve into the world of web development, thanks to Start2impact. Who knows, I might be able to reinvent myself.</p>
-                <p class="text-center">Welcoming you to my site is my pixel alter ego, created thanks to AI.</p>
-            </div>
-        </div>
-    </div>
+
+<div class="bag mt1">
+  <div class="container">
+      <div class="row">
+          <div class="text-center">
+              <img src="assets/images/profilo1.png" class="img_profile" alt="foto profilo">
+          </div>
+          <div class="text-white">
+              <h2 class="text-center mt3">Front-end student</h2>
+              <h3 class="text-center text-white">& History teacher</h3>
+              <p>Two things that seem so distant: history and technology. Past and future. They have lived in me since childhood. In high school I studied the basics of computer science, while at university I followed the path of history. Now, I question what I have become, a history teacher, to delve into the world of web development, thanks to Start2impact. Who knows, I might be able to reinvent myself.</p>
+              <p class="text-center">Welcoming you to my site is my pixel alter ego, created thanks to AI.</p>
+          </div>
+      </div>
+  </div>
 </div>
-<!-- Footer -->
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bag-2">
-    <div class="col-md-3 d-flex align-items-center">
-        <a href="https://www.start2impact.it/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <img src="https://www.start2impact.it/wp-content/uploads/2022/08/Logo_University-10.png" width="150px" alt="Start2Impact Logo" style="margin-left: 20px;">
-        </a>
-    </div>
+<!-- FOOTER -->
+<footer class="bag-2 footer">
+  <div class="">
+      <a href="https://www.start2impact.it/" class="text-muted">
+          <img src="https://www.start2impact.it/wp-content/uploads/2022/08/Logo_University-10.png" alt="Start2Impact Logo" class="logo_impact">
+      </a>
+  </div>
     <!-- Social media links -->
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="margin-right: 2%;">
-        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/marco-rosato/">
-            <i class="fa-brands fa-linkedin"></i> 
-        </a></li>
-        <li class="ms-3"><a class="text-muted" href="https://github.com/capflint92">              
-            <i class="fa-brands fa-github"></i> 
-        </a></li>
-        <li class="ms-3 mr-3"><a class="text-muted" href="https://www.instagram.com/marco.orsato/">
-            <i class="fa-brands fa-instagram"></i> 
-        </a></li>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/marco-rosato/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/capflint92" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/marco.orsato/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
     </ul>
 </footer>
 
-<!-- Font Awesome scripts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
 <script src="https://kit.fontawesome.com/39f7d92bd7.js" crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="assets/js/index.js"></script>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("cyGF4dk-5gfrVke_i"); // Inserisci il tuo user ID di EmailJS
+        })();
+    </script>
+    
+    <script>
+        function sendEmail() {
+            // Ottieni i valori dal modulo
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+            // Invia il modulo utilizzando EmailJS
+            emailjs.send("service_mr1092", "template_w322g1t", {
+                from_name: name,
+                from_email: email,
+                message_html: message
+            }).then(function (response) {
+                console.log("Email inviata con successo", response);
+                alert("Grazie per averci contattato! Riceverai presto una risposta.");
+                document.getElementById("contact-form").reset(); 
+            }, function (error) {
+                console.log("Errore nell'invio dell'email", error);
+                alert("Si è verificato un errore nell'invio dell'email. Riprova più tardi.");
+            });
+        }
+    </script>
+    
+
 </body>
 </html>
