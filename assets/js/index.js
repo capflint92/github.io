@@ -35,3 +35,5 @@ function openContactForm() {
 function closeContactForm() {
   document.getElementById("contactFormOverlay").style.display = "none";
 }
+
+
